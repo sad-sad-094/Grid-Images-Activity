@@ -1,0 +1,76 @@
+/* Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com */
+
+
+.img-tarjetas {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-color: rgb(255, 126, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.background h2 {
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.background p {
+  font-size: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  width: 80%;
+  background-color: rgb(240, 248, 255);
+  gap: 5px 5px;
+  justify-content: center;
+  align-content: center;
+  margin: auto auto;
+}
+
+.container-tarjetas {
+  position: relative;
+
+}
+
+.tarjetas {
+  padding: 10px;
+}
+
+.nombre-ciudad {
+  position: absolute;
+  bottom: 17px;
+  right: 16px;
+  font-size: 70%;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 400px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nombre-ciudad {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .nombre-ciudad {
+    font-size: 90%;
+  }
+}
